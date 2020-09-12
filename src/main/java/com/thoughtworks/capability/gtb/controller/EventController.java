@@ -23,7 +23,8 @@ public class EventController {
   }
 
   @PostMapping("/events")
-  public void createEvent(@RequestBody EventVo event) {
-    log.info("create event: {}", event);
+  public EventVo createEvent(@RequestBody EventVo event) {
+    return event;
+    //log.info("create event: {}", event);
   }
 }
